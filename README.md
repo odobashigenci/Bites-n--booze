@@ -13,3 +13,6 @@ I SEE a clear and organized homepage that provides an overview of the types of r
 WHEN I have selected a category that interests me, 
 I SEE the ability to further refine my search by applying filters, such as ingredient type, cooking time, or level of difficulty. 
 I ALSO SEE the website providing me with clear and accurate information about each recipe, including a list of ingredients, step-by-step instructions, and an estimated time to prepare.
+
+## Wireframe
+https://www.canva.com/design/DAFcGVUwM8Y/bCslbUXi5dP1h_hjxrzU0A/edit?analyticsCorrelationId=2cddede0-e5c6-4eb4-bff3-9304381ab05d
