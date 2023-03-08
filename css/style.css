@@ -1,6 +1,4 @@
 * {
-    box-sizing: border-box;
-    color: #333;
     font-family: 'Merriweather', 'Gloock', sans-serif;
     margin: 0;
     padding: 0;
@@ -9,8 +7,9 @@
 body {
     background: #e5c99c;
     font-family: "Merriweather";
-    margin: 0 20px;
+   
 }
+
 
 p {
     color: #213e50;
@@ -33,12 +32,24 @@ h1, h2 {
     background: #e5c99c;
 }
 
-.container {
+.navbar-item {
+    margin-left: 50px;
+}
+
+.myContainer {
     margin: 0;
     width: 100vw;
-    display: grid;
-    grid-template-areas: "sidebar main";
-    grid-template-columns: auto auto auto;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (max-width: 800px){
+    .myContainer {
+        justify-content: center;
+    }
   }
 
 .hero{
@@ -49,23 +60,30 @@ h1, h2 {
     justify-content: center;
     height: 90vh;
     grid-area: main;
-    width: 78.5vw;
+    width: 100vw;
 }
 
-
 .sidebar-left {
-    grid-area: sidebar;
-    width: 200px;
-
-    height: 50vw;
     background-color: #e6ecea;
+    grid-area: sidebar;
+    height: 70vh;
+    /* position: fixed; */
+    width: 200px;
+    
+  }
+
+  @media (max-width: 800px){
+    .sidebar-left, .sidebar-right {
+        display: none;
+    }
   }
 
   .sidebar-right {
-    width: 200px;
-    height: 50vw;
-
     background-color: #e6ecea;
+    height: 70vh;
+    /* position: fixed; */
+    justify-self: right;
+    width: 200px;
   }
 
 
@@ -85,18 +103,28 @@ button {
 
 .column {
  
-    width: 30% !important;
+    width: 30%;
 }
 
-.eat {
+@media (max-width: 800px){
+    .column {
+        padding: 0;
+        width: 100%;
+    }
+  }
+
+
+.eat, .drink {
     margin-bottom: 20px;
     padding: 40px;
     text-align: center;
 }
 
-.drink {
-    margin-bottom: 20px;
-    padding: 40px;
-    text-align: center;
-}
+@media (max-width: 800px){
+    .eat, .drink {
+        padding: 0;
+        width: 100%;
+    }
+  }
+ 
 
