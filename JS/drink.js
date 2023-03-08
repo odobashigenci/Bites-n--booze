@@ -3,10 +3,12 @@
 
 var apiKey = "1"
 var searchButton = $("#liquor-search")
+var resultsContainerEl = $("#results-container")
 
 $(function recipeFinder(){
     searchButton.click(function(e) {
         e.preventDefault
+        resultsContainerEl.html("")
         var ingredient = $("input[type=search]").val();
         var apiUrl = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" + ingredient;
         console.log(apiUrl)
@@ -38,7 +40,7 @@ $(function recipeFinder(){
             displayBody.append(drinkImg);
         }
 
-        $("body").append(displayCard)
+        resultsContainerEl.append(displayCard)
 
         $("img").wrap("<a></a>")
         $("a").attr("href", "https://www.thecocktaildb.com/drink/")
