@@ -1,6 +1,3 @@
-
-
-
 var apiKey = '1'
 var searchBtn = $('#food-search')
 var resultsContainerEl = $('#results-container');
@@ -8,6 +5,7 @@ var resultsContainerEl = $('#results-container');
 $(function recipeFinder() {
     searchBtn.click(function (e) {
         e.preventDefault
+        resultsContainerEl.html('')
         var ingredient = $('input[type=search]').val();
         var apiUrl = 'https://www.themealdb.com/api/json/v1/1/filter.php?i=' + ingredient;
         console.log(apiUrl)
