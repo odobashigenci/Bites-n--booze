@@ -1,6 +1,3 @@
-
-
-
 var hungryBtn = document.getElementById("hungry")
 var thirstyBtn = document.getElementById("thirsty")
 

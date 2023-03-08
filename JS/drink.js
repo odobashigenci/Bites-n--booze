@@ -1,6 +1,3 @@
-
-
-
 var apiKey = "1"
 var searchButton = $("#liquor-search")
 
