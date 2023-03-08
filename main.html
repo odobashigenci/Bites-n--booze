@@ -1,142 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Bites-n'-Booze</title>
-        <meta charset="utf-8">
-        <style>
-        </style>
-    </head>
-    <body>
-       
-        <h1>Recipe Book</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+
+<body>
+  <main>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <img src="C:\Users\Genci\OneDrive\Desktop\BTC\Bites-n--booze\assets\B n' B logo.png" width="112" height="28">
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Bites n' Booze
+            </a>
+            <a class="navbar-item">
+              Hungry
+            </a>
+            <a class="navbar-item">
+                Thirsty
+              </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Quick Menu
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  Dishes
+                </a>
+                <a class="navbar-item">
+                  Drinks
+                </a>
+              </div>
+            </div>
+          </div>
+           
+        </div>
+      </nav>
+    <header>
+
+   
+    <div class="container">
+        <div class="sidebar-left">
+
+        </div>
+
         
-        <h2>Contents:</h2>
+
+        <div class="hero main">
+          <h2>Welcome to</h2>
+          <h1>Bites n' Booze</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <button class="submit">Start Creating</button>
+        </div>
+
+        <div class="sidebar-right">
+          <div id="sidebarcontents"></div>
+        </div>
         
-        <ol>
-            <li><a href="?">Recipe #1 (Entree)</a></li>
-        </ol>
-        
-        <h2 id="?">Recipe #1</h2>
-        
-        <ul>
-            <li>Time: _</li>
-            <li>Serves: _</li>
-        </ul>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Ingredients</th>
-                    <th>Quantity</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-        
-        <p><strong>Step 1:</strong> Do something.
-</p>
-<ol>
-    <li><a href="?">Recipe #2 (Entree)</a></li>
-</ol>
+      
+      </div>
 
-<h2 id="?">Recipe #2</h2>
+      <div class="columns">
+        <div class="column is-half">
+          <input class="eat input" type="text" placeholder="Text input">
+        <button class="submit">Submit</button>
+        </div>
+        <div class="column is-half">
+          <input class="drink input" type="text" placeholder="Text input">
+        <button class="submit">Submit</button>
+        </div>
+      </div>
+    </main>
+                
+         
+     
+      
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+      </footer>
+  </body>
 
-<ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-</ul>
-
-<table>
-    <thead>
-        <tr>
-            <th>Ingredients</th>
-            <th>Quantity</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
-
-<p><strong>Step 1:</strong> Do something.
-</p>     
-
-<ol>
-    <li><a href="?">Recipe #3 (Entree)</a></li>
-</ol>
-
-<h2 id="?">Recipe #3</h2>
-
-<ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-</ul>
-
-<table>
-    <thead>
-        <tr>
-            <th>Ingredients</th>
-            <th>Quantity</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
-
-<p><strong>Step 1:</strong> Do something.
-</p>     
-
-<ol>
-    <li><a href="?">Recipe #4 (Cocktail)</a></li>
-</ol>
-
-<h2 id="?">Recipe #4</h2>
-
-<ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-</ul>
-
-<table>
-    <thead>
-        <tr>
-            <th>Ingredients</th>
-            <th>Quantity</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
-
-<p><strong>Step 1:</strong> Do something.
-</p>     
-
-<ol>
-    <li><a href="?">Recipe #4 (Cocktail)</a></li>
-</ol>
-
-<h2 id="?">Recipe #5</h2>
-
-<ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-</ul>
-
-<table>
-    <thead>
-        <tr>
-            <th>Ingredients</th>
-            <th>Quantity</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
-
-<p><strong>Step 1:</strong> Do something.
-</p>     
-
-    <p><em>Source: <a href="?">Some recipes websites</a></em></p>
-    
-    </body>
 </html>
+
+
+
+
