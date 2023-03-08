@@ -38,6 +38,7 @@ $(function recipeFinder() {
         resultsContainerEl.append(displayCard);
         $('img').wrap("<a></a>")
         $('a').attr('href', 'https://www.themealdb.com/meal/')
+        $('a').attr('width', '45%')
 
         var hrefUrls = $('a')
         console.log(hrefUrls.length)
