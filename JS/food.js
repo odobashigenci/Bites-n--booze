@@ -1,3 +1,6 @@
+
+
+
 var apiKey = '1'
 var searchBtn = $('#food-search')
 var resultsContainerEl = $('#results-container');

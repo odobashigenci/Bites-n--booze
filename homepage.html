@@ -1,42 +1,104 @@
-<!doctype html>
-<html lang=en>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="" type="" href=""/>
-  <title>Bites-n'-Booze</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css\style.css">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar"></nav>
-    <!-- <! -- LOGO --> 
-    <div class="logo">Bites n' Booze</div>
-        <!-- <! -- NAVIGATION MENU -->
-      <ul class="nav-links">
-        <!-- <! -- NAVIGATION MENUS -->
-        <div class="menu">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li> <a href="">Hungry</a></li>
-        <li><a href="">Thirsty</a></li>
-        <!-- <! DROPDOWN MENU -->
-        <ul class="dropdown"></ul>
-        <li> <a href="">Quick Menu</a></li>
-        <li><a href="">Hungry</a></li>
-        <li><a href="">Ingredients</a></li>
-        <li> <a href="">Preparation</a></li>
-        <li> <a href="">Thirsty</a></li>
-        <li> <a href="">Booze Locator</a></li>
-        <script src="main.js"></script>
-      </ul>
-    </nav>
-  </header>
+  <main>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <img src="C:\Users\Genci\OneDrive\Desktop\BTC\Bites-n--booze\assets\B n' B logo.png" width="112" height="28">
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Bites n' Booze
+            </a>
 
-  <footer class="text-center">
-    © 2023 Bites-n'-Booze Productions 
-  </footer>
-    
-</body>
-</html>
+            <a class="navbar-item">
+              Quick Menu
+            </a>
+            <a class="navbar-item">
+              Hungry
+            </a>
+            <a class="navbar-item">
+                Thirsty
+              </a>
+              <a class="navbar-item">
+                Best Dishes
+              <a class="navbar-item">
+                Best Drinks
+              </a>
+          
+          </div>
+           
+        </div>
+      </nav>
+    <header>
+
+        <div class="container">
+          <div class="sidebar-left">
+  
+          </div>
+  
+          
+  
+          <div class="hero main">
+            <h2>Welcome to</h2>
+            <h1>Bites n' Booze</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button class="submit">Start Creating</button>
+          </div>
+  
+          <div class="sidebar-right">
+            <div id="sidebarcontents"></div>
+          </div>
+          
+        
+        </div>
+  
+        <div class="columns">
+          <div class="column is-half">
+            <input class="eat input" type="text" placeholder="Food ingredients">
+          <button class="submit">Submit</button>
+          </div>
+          <div class="column is-half">
+            <input class="drink input" type="text" placeholder="Drink ingredients">
+          <button class="submit">Submit</button>
+          </div>
+        </div>
+      </main>
+                  
+        <footer class="footer">
+          <div class="content has-text-centered">
+            <p>
+              <strong>Bites n' Booze</strong>
+            </p>
+            <p>Email</p>
+            <p>Contact us</p>
+          </div>
+        </footer>
+        <script src="JS\drink.js"></script>
+        <script src="JS\food.js"></script>
+        <script src="JS\main.js"></script>
+    </body>
+  
+  </html>
+  
