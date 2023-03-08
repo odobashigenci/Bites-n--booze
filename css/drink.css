@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'Merriweather', 'Gloock', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e5c99c;
+    font-family: "Merriweather";
+    margin: 0 20px;
+    padding: 50px;
+}
+
+h1 {
+    color: #213e50;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+button {
+    color: #213e50;
+    font-size: 1rem;
+    display: flex;
+    margin: auto auto 50px;
+    justify-content: center;
+    width: 150px;
+}
+input {
+    color: #213e50;
+    font-size: 1rem;
+    display: flex;
+    margin: auto auto 50px;
+    justify-content: center;
+    width: 150px;
+}
