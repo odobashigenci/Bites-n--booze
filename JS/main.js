@@ -7,9 +7,9 @@ var thirstyBtn = document.getElementById("thirsty")
 
 
 hungryBtn.addEventListener("click", () => {
-    window.location.href("food.js");
+    window.location.assign("food.html");
 })
 
 thirstyBtn.addEventListener("click", () => {
-    window.location.href("drink.js");
+    window.location.assign("drink.html");
 })
