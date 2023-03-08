@@ -1,5 +1,5 @@
 # Bites-n'-Booze
-This is an app that will help you create a food and cocktail recipe, with the ingredients you have ready at home.
+This is an app that will help you create a food and cocktail recipe, with the ingredients you have ready at home. :p
 
 ## User Story
 
