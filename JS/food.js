@@ -20,6 +20,7 @@ $(function recipeFinder() {
 
     function printResults(resultObj) {
         var displayCard = document.createElement('div');
+        displayCard.classList.add('slides')
         console.log(resultObj)
 
         for (let i = 0; i < resultObj.meals.length; i++) {
@@ -34,6 +35,9 @@ $(function recipeFinder() {
             mealImg.classList.add('meal-img');
             mealImg.src = mealImgUrl;
 
+            var mealName = meal.strMeal;
+            console.log(mealName)
+
             displayBody.append(mealImg);
         }
         resultsContainerEl.append(displayCard);
@@ -44,8 +48,6 @@ $(function recipeFinder() {
         var hrefUrls = $('a')
         console.log(hrefUrls.length)
         var oldUrl = $(hrefUrls).attr('href')
-        console.log(oldUrl)
-
 
         for (n = 0; n < hrefUrls.length; n++) {
             var newUrl = oldUrl + resultObj.meals[n].idMeal;
