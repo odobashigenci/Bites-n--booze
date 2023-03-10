@@ -60,34 +60,34 @@ $(function recipeFinder() {
         }
 
         //comment out lines 63 to 91 to revert to MVP
-        var carouselIndex = 1;
-        showCarousel(carouselIndex);
+        // var carouselIndex = 1;
+        // showCarousel(carouselIndex);
 
-        function plusIndex(n) {
-            showCarousel(carouselIndex += n)
-        }
+        // function plusIndex(n) {
+        //     showCarousel(carouselIndex += n)
+        // }
 
-        function showCarousel(n) {
-            var i;
-            var slides = $('.meal');
-            if (n > slides.length) {carouselIndex = 1};
-            if (n < 1) {carouselIndex = slides.length};
-            for (i =0; i < slides.length; i++) {
-                $('.meal').css('display', 'none');
-            }
-            slides[carouselIndex-1].style.display = "block"
-        }
+        // function showCarousel(n) {
+        //     var i;
+        //     var slides = $('.meal');
+        //     if (n > slides.length) {carouselIndex = 1};
+        //     if (n < 1) {carouselIndex = slides.length};
+        //     for (i =0; i < slides.length; i++) {
+        //         $('.meal').css('display', 'none');
+        //     }
+        //     slides[carouselIndex-1].style.display = "block"
+        // }
 
-        var prevBtn = document.createElement('a');
-        var nextBtn = document.createElement('a');
-        prevBtn.classList.add('prev')
-        nextBtn.classList.add('next')
-        prevBtn.textContent = '&#12298;';
-        nextBtn.textContent = '&#12299;';
-        $('.prev').on('click', plusIndex(-1));
-        $('.next').on('click', plusIndex(1))
+        // var prevBtn = document.createElement('a');
+        // var nextBtn = document.createElement('a');
+        // prevBtn.classList.add('prev')
+        // nextBtn.classList.add('next')
+        // prevBtn.textContent = '&#12298;';
+        // nextBtn.textContent = '&#12299;';
+        // $('.prev').on('click', plusIndex(-1));
+        // $('.next').on('click', plusIndex(1))
 
-        displayCard.append(prevBtn)
-        displayCard.append(nextBtn)
+        // displayCard.append(prevBtn)
+        // displayCard.append(nextBtn)
     }
 })
