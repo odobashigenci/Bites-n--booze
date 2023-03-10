@@ -14,8 +14,8 @@ body {
 p {
     color: white;
     font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     margin: 100px auto  auto;
     text-align: center;
     width: 50%;
@@ -32,9 +32,11 @@ h1 {
 
 h2 {
     color: #213e50;
+    font-size: 1.2rem;
     font-weight: bold;
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 h3 {
@@ -50,6 +52,23 @@ h3 {
 
 .navbar-item {
     margin-left: 50px;
+}
+
+.navbar-burger {
+    height: 100px;
+    width: 100px;
+}
+
+@media screen and (max-width: 1023px) {
+.navbar-menu {
+ 
+    background: #e5c99c;
+    box-shadow: none;
+    margin: auto;
+    padding: 0.5rem 0;
+    text-align: center;
+    width: 50%;
+}
 }
 
 .myContainer {
@@ -79,13 +98,25 @@ h3 {
     width: 100vw;
 }
 
+#more {
+    display: none;
+}
+
+#myBtn {
+    background: transparent;
+    border-style: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
 .sidebar-left {
     background-color: #e6ecea;
+    box-shadow: 0px 0px 20px 3px #213e50;
     grid-area: sidebar;
     height: 70vh;
-    /* position: fixed; */
-    width: 200px;
-    
+    width: 250px;
   }
 
   @media (max-width: 800px){
@@ -96,10 +127,10 @@ h3 {
 
   .sidebar-right {
     background-color: #e6ecea;
+    box-shadow: 0px 0px 20px 3px #213e50;
     height: 70vh;
-    /* position: fixed; */
     justify-self: right;
-    width: 200px;
+    width: 250px;
   }
 
 
@@ -109,7 +140,7 @@ h3 {
     }
 }
 
-button {
+#hungry, #thirsty {
     background: #e6ecea;
     border-radius: 15px;
     color: #213e50;
@@ -122,7 +153,7 @@ button {
     width: 200px;
 }
 
-button:hover {
+#thirsty:hover, #hungry:hover {
     background: transparent;
     box-shadow: 0 0.4rem 1.4rem 0 #213e50;
     transform: translateY(-0.1rem);
@@ -151,4 +182,46 @@ button:hover {
     }
   }
 
+  #contact {
+    align-items: center;
+    background: #e6ecea;
+    box-shadow: 0px 0px 20px 3px #213e50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    margin: auto auto 30px;
+    width: 60%;
+
+  
+  }
+
+.icons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* padding: 10px; */
+}
+
+.icons a {
+    margin: 70px 20px -70px;
+    color: #213e50;
+}
+
+.closing {
+    color: #213e50;
+}
+
+.fa-linkedin:hover {
+  color: #0A66C2;
+
+}
+
+.fa-square-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-github:hover {
+  color: #070707;
+}
 
