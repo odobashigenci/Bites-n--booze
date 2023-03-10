@@ -2,22 +2,22 @@ var apiKey = "1"
 var searchButton = $("#liquor-search")
 var resultsContainerEl = $("#results-container")
 
-$(function recipeFinder(){
-    searchButton.click(function(e) {
+$(function recipeFinder() {
+    searchButton.click(function (e) {
         e.preventDefault
         resultsContainerEl.html("")
         var ingredient = $("input[type=search]").val();
         var apiUrl = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" + ingredient;
         console.log(apiUrl)
 
-        fetch(apiUrl).then(function (results){
+        fetch(apiUrl).then(function (results) {
             return results.json();
         }).then(function (recipe) {
             printResults(recipe);
             console.log(recipe);
         })
     })
-    function printResults(resultObj){
+    function printResults(resultObj) {
         var displayCard = document.createElement("div")
         console.log(resultObj)
 
@@ -29,10 +29,16 @@ $(function recipeFinder(){
             var displayBody = document.createElement("div");
             displayCard.append(displayBody);
 
-            
+
             var drinkImg = document.createElement("img")
             drinkImg.classList.add("drink-img");
             drinkImg.src = drinkImgUrl;
+
+            var drinkCaption = document.createElement("h2");
+            var drinkName = drink.strDrink;
+            drinkCaption.textContent = drinkName;
+            console.log(drinkName);
+            displayBody.append(drinkCaption);
 
             displayBody.append(drinkImg);
         }
@@ -42,16 +48,16 @@ $(function recipeFinder(){
         $("img").wrap("<a></a>")
         $("a").attr("href", "https://www.thecocktaildb.com/drink/")
 
-        var hrefUrls= $("a")
+        var hrefUrls = $("a")
         console.log(hrefUrls.length)
         var oldUrl = $(hrefUrls).attr("href")
         console.log(oldUrl)
 
 
         for (n = 0; n < hrefUrls.length; n++) {
-        var newUrl = oldUrl + resultObj.drinks[n].idDrink;
-        var urlCount = hrefUrls[n]
-        $(urlCount).attr("href", newUrl)
+            var newUrl = oldUrl + resultObj.drinks[n].idDrink;
+            var urlCount = hrefUrls[n]
+            $(urlCount).attr("href", newUrl)
         }
 
     }
