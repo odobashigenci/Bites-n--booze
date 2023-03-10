@@ -59,6 +59,7 @@ $(function recipeFinder() {
             $(urlCount).attr('href', newUrl);
         }
 
+        //comment out lines 63 to 91 to revert to MVP
         var carouselIndex = 1;
         showCarousel(carouselIndex);
 
@@ -85,5 +86,8 @@ $(function recipeFinder() {
         nextBtn.textContent = '&#12299;';
         $('.prev').on('click', plusIndex(-1));
         $('.next').on('click', plusIndex(1))
+
+        displayCard.append(prevBtn)
+        displayCard.append(nextBtn)
     }
 })
