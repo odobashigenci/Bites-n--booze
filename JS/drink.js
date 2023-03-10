@@ -17,6 +17,7 @@ $(function recipeFinder() {
             console.log(recipe);
         })
     })
+    
     function printResults(resultObj) {
         var displayCard = document.createElement("div")
         console.log(resultObj)
