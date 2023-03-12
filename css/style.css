@@ -14,8 +14,7 @@ body {
 p {
     color: white;
     font-size: 1.5rem;
-    /* display: flex;
-    justify-content: center; */
+    font-weight: bold;
     margin: 100px auto  auto;
     text-align: center;
     width: 50%;
@@ -93,7 +92,7 @@ h3 {
     background-size: cover;
     display: flex;
     justify-content: center;
-    height: 80vh;
+    height: 90vh;
     grid-area: main;
     width: 100vw;
 }
@@ -217,7 +216,7 @@ h3 {
 
 }
 
-.fa-square-facebook:hover {
+.fa-envelope:hover {
   color: #3b5998;
 }
 

@@ -3,6 +3,8 @@ var searchButton = $("#liquor-search")
 var resultsContainerEl = $("#results-container")
 
 $(function recipeFinder() {
+
+    //setting up the submit button to render results on click
     searchButton.click(function (e) {
         e.preventDefault
         resultsContainerEl.html("")
@@ -16,10 +18,23 @@ $(function recipeFinder() {
             printResults(recipe);
             console.log(recipe);
         })
+        $("input[type=search]").val('');
     })
-    
+
+    //setting up enter button to do the same function as submit button
+    //and clearing the text from the search are after
+    $('input[type=search]').keypress(function (e) {
+        if (e.keyCode === 13) {
+            searchButton.click();
+            $(this).val('');
+        }
+    });
+
+
+    //creating html elements to display results on screen
     function printResults(resultObj) {
         var displayCard = document.createElement("div")
+        displayCard.classList.add('slides');
         console.log(resultObj)
 
         for (let i = 0; i < 10; i++) {
@@ -28,6 +43,7 @@ $(function recipeFinder() {
             console.log(drinkImgUrl)
 
             var displayBody = document.createElement("div");
+            displayBody.classList.add('myDrink');
             displayCard.append(displayBody);
 
 
@@ -44,11 +60,13 @@ $(function recipeFinder() {
             displayBody.append(drinkImg);
         }
 
+        //appending results to html elements created
         resultsContainerEl.append(displayCard)
 
         $("img").wrap("<a></a>")
         $("a").attr("href", "https://www.thecocktaildb.com/drink/")
-
+        $('a').attr('target', '_blank');
+        
         var hrefUrls = $("a")
         console.log(hrefUrls.length)
         var oldUrl = $(hrefUrls).attr("href")
