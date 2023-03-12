@@ -31,7 +31,7 @@ THEN I also see the website providing me with clear and accurate information abo
 To view page [click here](https://odobashigenci.github.io/Bites-n--booze/homepage.html)
 
 
-## Logo
+## Image
 
 ![logo](Bites-n--booze/assets/b n' b logo.png)
 
