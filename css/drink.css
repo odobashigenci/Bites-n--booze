@@ -19,6 +19,24 @@ h1 {
     margin: 50px 0 20px;
 }
 
+h2 {
+    color: #213e50;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+  color: white;
+  font-size: 1.5rem;
+  margin: 100px auto  65px;
+  text-align: center;
+  width: 50%;
+}
+
 button {
     background: #e6ecea;
     border-radius: 15px;
@@ -28,7 +46,7 @@ button {
     font-weight: bold;
     display: flex;
     justify-content: center;
-    margin: auto auto 50px;
+    margin: auto auto 120px;
     padding: 3px;
     width: 200px;
 }
@@ -47,9 +65,99 @@ button:hover {
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
-    height: 100px;
+    height: auto;
     margin: auto auto 50px;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
+    width: auto;
+}
+
+@media (max-width: 600px) {
+    .drink {
+        height: auto;
+        width: auto;
+    }
+}
+
+img {
+    border: solid #213e50;
+    border-radius: 100px;
+    transition: 0.2s ease-out;
+    padding: 5px;
+}
+
+img:hover {
+    box-shadow: 0px 0px 20px 3px #213e50;;
+  transform: scale(1.05);
+}
+
+.slides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .myDrink {
+    width: calc(25% - 16px);
+    margin-bottom: 50px;
+  }
+  
+  @media (max-width: 1500px) {
+    .myDrink {
+    width: calc(33.33% - 16px);
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .myDrink {
+      width: calc(50% - 16px);
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .myDrink {
+      width: calc(100% - 16px);
+    }
+  }
+
+  #contact {
+    align-items: center;
+    background: #e6ecea;
+    box-shadow: 0px 0px 20px 3px #213e50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15vh;
+    margin: 80px auto 0;
     width: 30%;
+  }
+
+
+.icons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* padding: 10px; */
+}
+
+.icons a {
+    margin: 70px 20px -70px;
+    color: #213e50;
+}
+
+.closing {
+    color: #213e50;
+}
+
+.fa-linkedin:hover {
+  color: #0A66C2;
+
+}
+
+.fa-envelope:hover {
+  color: #3b5998;
+}
+
+.fa-github:hover {
+  color: #070707;
 }
