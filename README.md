@@ -33,12 +33,12 @@ To view page [click here](https://odobashigenci.github.io/Bites-n--booze/homepag
 
 ## Logo
 
-![](assets/b n' b logo.png)
+![logo](assets/b n' b logo.png)
 
 
 ## Wireframe
 
-Made with ![Canva](https://www.canva.com/design/DAFcGVUwM8Y/bCslbUXi5dP1h_hjxrzU0A/edit?analyticsCorrelationId=2cddede0-e5c6-4eb4-bff3-9304381ab05d)
+Made with (https://www.canva.com/design/DAFcGVUwM8Y/bCslbUXi5dP1h_hjxrzU0A/edit?analyticsCorrelationId=2cddede0-e5c6-4eb4-bff3-9304381ab05d)
 
 
 ## Credits
