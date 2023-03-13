@@ -35,13 +35,12 @@ $(function recipeFinder() {
     function printResults(resultObj) {
         var displayCard = document.createElement("div")
         displayCard.classList.add('slides');
-        console.log(resultObj)
-
+        
         for (let i = 0; i < 10; i++) {
             var drink = resultObj.drinks[i]
             var drinkImgUrl = drink.strDrinkThumb;
             console.log(drinkImgUrl)
-
+           
             var displayBody = document.createElement("div");
             displayBody.classList.add('myDrink');
             displayCard.append(displayBody);
@@ -50,6 +49,7 @@ $(function recipeFinder() {
             var drinkImg = document.createElement("img")
             drinkImg.classList.add("drink-img");
             drinkImg.src = drinkImgUrl;
+           
 
             var drinkCaption = document.createElement("h2");
             var drinkName = drink.strDrink;
