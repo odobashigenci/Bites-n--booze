@@ -132,6 +132,13 @@ img:hover {
     width: 30%;
   }
 
+  @media (max-width: 700px) {
+    #contact {
+        height: 25vh;
+        width: 70vw;
+    }
+  }
+
 .icons {
     align-items: center;
     display: flex;
