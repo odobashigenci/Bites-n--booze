@@ -14,11 +14,16 @@ body {
 p {
     color: white;
     font-size: 1.5rem;
-    /* display: flex;
-    justify-content: center; */
+    font-weight: bold;
     margin: 100px auto  auto;
     text-align: center;
     width: 50%;
+}
+
+@media (max-width: 700px){
+.welcome{
+    width: 70%
+}
 }
 
 h1 {
@@ -29,6 +34,13 @@ h1 {
     justify-content: center;
     margin-top: 200px;
 }
+
+@media (max-width: 700px){
+h1{
+    margin-top: 60px;
+}
+}
+
 
 h2 {
     color: #213e50;
@@ -95,7 +107,7 @@ h3 {
     background-size: cover;
     display: flex;
     justify-content: center;
-    height: 80vh;
+    height: 90vh;
     grid-area: main;
     width: 100vw;
 }
@@ -194,10 +206,14 @@ h3 {
     height: 20vh;
     margin: auto auto 30px;
     width: 60%;
-
-  
   }
 
+  @media (max-width: 700px) {
+    #contact {
+        height: 25vh;
+        width: 70vw;
+    }
+  }
 .icons {
     align-items: center;
     display: flex;
@@ -219,7 +235,7 @@ h3 {
 
 }
 
-.fa-square-facebook:hover {
+.fa-envelope:hover {
   color: #3b5998;
 }
 

@@ -3,6 +3,7 @@ var searchBtn = $('#food-search')
 var resultsContainerEl = $('#results-container');
 
 $(function recipeFinder() {
+    //setting up the submit button to render results on click
     searchBtn.click(function (e) {
         e.preventDefault;
         resultsContainerEl.html('');
@@ -11,13 +12,24 @@ $(function recipeFinder() {
         console.log(apiUrl);
 
         fetch(apiUrl).then(function (results) {
-            return results.json();
+            return results.json(); 
         }).then(function (recipe) {
             printResults(recipe);
-            console.log(recipe);
+            console.log(recipe);    
         })
+        $("input[type=search]").val('');
     })
 
+    //setting up enter button to do the same function as submit button
+    //and clearing the text from the search are after
+    $('input[type=search]').keypress(function (e) {
+        if (e.keyCode === 13) {
+            searchBtn.click();
+            $(this).val('');
+        }
+    });
+
+    //creating html elements to display results on screen
     function printResults(resultObj) {
         var displayCard = document.createElement('div');
         displayCard.classList.add('slides');
@@ -44,6 +56,8 @@ $(function recipeFinder() {
             displayBody.append(mealCaption);
             displayBody.append(mealImg);
         }
+
+        //appending results to html elements created
         resultsContainerEl.append(displayCard);
         $('img').wrap("<a></a>");
         $('a').attr('href', 'https://www.themealdb.com/meal/');
@@ -59,35 +73,6 @@ $(function recipeFinder() {
             $(urlCount).attr('href', newUrl);
         }
 
-        //comment out lines 63 to 91 to revert to MVP
-        var carouselIndex = 1;
-        showCarousel(carouselIndex);
-
-        function plusIndex(n) {
-            showCarousel(carouselIndex += n)
-        }
-
-        function showCarousel(n) {
-            var i;
-            var slides = $('.meal');
-            if (n > slides.length) {carouselIndex = 1};
-            if (n < 1) {carouselIndex = slides.length};
-            for (i =0; i < slides.length; i++) {
-                $('.meal').css('display', 'none');
-            }
-            slides[carouselIndex-1].style.display = "block"
-        }
-
-        var prevBtn = document.createElement('a');
-        var nextBtn = document.createElement('a');
-        prevBtn.classList.add('prev')
-        nextBtn.classList.add('next')
-        prevBtn.textContent = '&#12298;';
-        nextBtn.textContent = '&#12299;';
-        $('.prev').on('click', plusIndex(-1));
-        $('.next').on('click', plusIndex(1))
-
-        displayCard.append(prevBtn)
-        displayCard.append(nextBtn)
+       
     }
 })
