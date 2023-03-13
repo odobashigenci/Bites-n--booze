@@ -33,7 +33,7 @@ To view page [click here](https://odobashigenci.github.io/Bites-n--booze/homepag
 
 ## Image
 
-![Alt text](assets/b n' b logo.png "Logo")
+![Preview Image](assets/b n' b logo.png)
 
 
 ## Wireframe
