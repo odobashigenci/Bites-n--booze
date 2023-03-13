@@ -20,9 +20,11 @@ p {
     width: 50%;
 }
 
+/* seting up the dropdown text expand to be smaller on mobile screen */
 @media (max-width: 700px){
 .welcome{
-    width: 70%
+    font-size: 1rem;
+    width: 80%
 }
 }
 
@@ -44,13 +46,12 @@ h1{
 
 h2 {
     color: #213e50;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
-
 
 
 h3 {
@@ -73,6 +74,7 @@ h3 {
     width: 100px;
 }
 
+/* turning the navbar menu into a burger on smaller screen */
 @media screen and (max-width: 1023px) {
 .navbar-menu {
  
@@ -85,6 +87,7 @@ h3 {
 }
 }
 
+/* setting up propperties for the main container */
 .myContainer {
     margin: 0;
     width: 100vw;
@@ -101,6 +104,7 @@ h3 {
     }
   }
 
+  /* setting up the background image propperties */
 .hero{
     background-image: url(https://images.pexels.com/photos/5490826/pexels-photo-5490826.jpeg);
     background-position: center;
@@ -112,6 +116,7 @@ h3 {
     width: 100vw;
 }
 
+/* setting up the dropdown text to be hidden on screen reload and visible on click */
 #more {
     display: none;
 }
@@ -124,13 +129,39 @@ h3 {
     font-weight: bold;
 }
 
-
+/* setting up the sidebars and the images inside */
 .sidebar-left {
     background-color: #e6ecea;
     box-shadow: 0px 0px 20px 3px #213e50;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
     grid-area: sidebar;
-    height: 70vh;
+    height: 80vh;
+    text-align: center;
     width: 250px;
+  }
+
+  .sidebar-left a {
+    color: #213e50;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  .sidebar-left img {
+    border: solid #213e50;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: -10px;
+    height: 130px;
+    transition: 0.2s ease-out;
+    padding: 5px;
+    width: 130px;
+  }
+
+  .sidebar-left img:hover {
+    box-shadow: 0px 0px 20px 3px #213e50;;
+    transform: scale(1.05);
   }
 
   @media (max-width: 800px){
@@ -139,21 +170,53 @@ h3 {
     }
   }
 
+  @media (max-width: 800px){
+   .sidebar-right {
+        display: none !important;
+    }
+  }
+
   .sidebar-right {
     background-color: #e6ecea;
     box-shadow: 0px 0px 20px 3px #213e50;
-    height: 70vh;
+    display: grid;
+    height: 80vh;
+    justify-content: center;
+    justify-items: center;
     justify-self: right;
+    text-align: center;
     width: 250px;
   }
 
+  .sidebar-right a {
+    color: #213e50;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  .sidebar-right img {
+    border: solid #213e50;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: -10px;
+    height: 130px;
+    transition: 0.2s ease-out;
+    padding: 5px;
+    width: 130px;
+  }
+
+  .sidebar-right img:hover {
+    box-shadow: 0px 0px 20px 3px #213e50;;
+   transform: scale(1.05);
+  }
 
 @media  (max-width: 800px) {
     button {
-        margin: 10px;
+        margin-bottom: 30px;
     }
 }
 
+/* setting up the main buttons propperties */
 #hungry, #thirsty {
     background: #e6ecea;
     border-radius: 15px;
@@ -174,14 +237,23 @@ h3 {
     transition: transform 150ms;
 }
 
-
-
 .columns {
-
     display: flex;
-    /* justify-content: center; */
     text-align: center;
 }
+
+@media (max-width: 800px){
+    .columns {
+    display: grid;
+    text-align: center;
+    }
+  }
+
+  @media (max-width: 800px){
+    h3 {
+    margin: 0;
+    }    
+  }
 
 .column {
  
@@ -190,7 +262,6 @@ h3 {
 
 @media (max-width: 800px){
     .column {
-        /* justify-content: space-between; */
         padding: 0;
         width: 100%;
     }
@@ -214,11 +285,11 @@ h3 {
         width: 70vw;
     }
   }
+
 .icons {
     align-items: center;
     display: flex;
     justify-content: center;
-    /* padding: 10px; */
 }
 
 .icons a {
