@@ -34,9 +34,7 @@ To view page [click here](https://odobashigenci.github.io/Bites-n--booze/homepag
 ## Image
 
 
-![Logo](assets\b_n_b_logo.png)
-
-
+![Logo](assets/b_n_b_logo.png)
 
 
 ## Wireframe
