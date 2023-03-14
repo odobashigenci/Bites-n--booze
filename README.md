@@ -44,7 +44,7 @@ Made with [Bulma](https://www.canva.com/design/DAFcGVUwM8Y/bCslbUXi5dP1h_hjxrzU0
 
 ## Credits
 
-Babackground-image made with [Pexels](https://www.pexels.com/)
+Background-image made with [Pexels](https://www.pexels.com/)
 
 Food API made with [ThemealDB](https://www.themealdb.com)
 
