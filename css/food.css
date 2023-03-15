@@ -1,3 +1,7 @@
+:root {
+  background: #e5c99c;
+}
+
 * {
     font-family: 'Merriweather', 'Gloock', sans-serif;
     margin: 0;
@@ -5,7 +9,10 @@
 }
 
 body {
-    background: #e5c99c;
+    background-image: url(https://images.pexels.com/photos/5490826/pexels-photo-5490826.jpeg);
+    background-position: center;
+    background-size: cover; 
+    height: 100vh;
     font-family: "Merriweather";
     padding: 50px;
 }
@@ -128,7 +135,7 @@ img:hover {
     flex-direction: column;
     justify-content: center;
     height: 15vh;
-    margin: 80px auto 0;
+    margin: 80px auto;
     width: 30%;
   }
 

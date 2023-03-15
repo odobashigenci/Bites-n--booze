@@ -49,7 +49,7 @@ $(function recipeFinder() {
             console.log('click')
                 $('#modal').removeClass('is-active');
         });
-
+        
             if (resultObj.meals === null) {
                 modalReveal()
             } else {
@@ -96,4 +96,5 @@ $(function recipeFinder() {
 
 
         }
+    
 })
